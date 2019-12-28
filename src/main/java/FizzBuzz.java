@@ -2,16 +2,16 @@ import static java.lang.String.format;
 
 public class FizzBuzz {
     public static String transform(int number) {
-        String returnStr = "";
+        String string = "";
         if (number % 3 == 0) {
-            returnStr += "Fizz";
+            string += "Fizz";
         }
         if (number % 5 == 0) {
-            returnStr += "Buzz";
+            string += "Buzz";
         }
-        if (returnStr.equals("")) {
+        if (string.equals("")) {
             return format("%d", number);
         }
-        return returnStr;
+        return string;
     }
 }
