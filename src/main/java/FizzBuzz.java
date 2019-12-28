@@ -1,16 +1,17 @@
+import static java.lang.String.format;
+
 public class FizzBuzz {
-    public static void main(String[] args){}
-    public static String of(int number) {
+    public static String transform(int number) {
+        String returnStr = "";
         if (number % 3 == 0) {
-            return "Fizz";
+            returnStr += "Fizz";
         }
         if (number % 5 == 0) {
-            return "Buzz";
+            returnStr += "Buzz";
         }
-        if (number % 15 == 0) {
-            return "FizzBuzz";
+        if (returnStr.equals("")) {
+            return format("%d", number);
         }
-        return null;
+        return returnStr;
     }
 }
-
